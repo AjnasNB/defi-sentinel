@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34D399;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="240" cy="240" r="230" fill="url(#bg)" stroke="#1e1e3e" stroke-width="3"/>
+
+  <!-- Outer glow ring -->
+  <circle cx="240" cy="240" r="200" fill="none" stroke="#10B981" stroke-width="2" opacity="0.3"/>
+  <circle cx="240" cy="240" r="210" fill="none" stroke="#10B981" stroke-width="1" opacity="0.15"/>
+
+  <!-- Shield shape -->
+  <path d="M240 100 L340 160 L340 280 Q340 340 240 380 Q140 340 140 280 L140 160 Z"
+        fill="none" stroke="url(#shield)" stroke-width="4" opacity="0.8"/>
+
+  <!-- Inner shield fill -->
+  <path d="M240 115 L330 170 L330 275 Q330 330 240 365 Q150 330 150 275 L150 170 Z"
+        fill="url(#glow)"/>
+
+  <!-- Central eye/sentinel icon -->
+  <ellipse cx="240" cy="230" rx="60" ry="40" fill="none" stroke="#10B981" stroke-width="3"/>
+  <circle cx="240" cy="230" r="18" fill="#10B981"/>
+  <circle cx="240" cy="230" r="8" fill="#0a0a1a"/>
+
+  <!-- Scanning lines -->
+  <line x1="170" y1="230" x2="130" y2="230" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+  <line x1="310" y1="230" x2="350" y2="230" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+  <line x1="240" y1="180" x2="240" y2="150" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+  <line x1="240" y1="280" x2="240" y2="310" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+
+  <!-- Data nodes -->
+  <circle cx="130" cy="230" r="4" fill="#10B981" opacity="0.7"/>
+  <circle cx="350" cy="230" r="4" fill="#10B981" opacity="0.7"/>
+  <circle cx="240" cy="150" r="4" fill="#10B981" opacity="0.7"/>
+  <circle cx="240" cy="310" r="4" fill="#10B981" opacity="0.7"/>
+
+  <!-- Chain connection dots -->
+  <circle cx="180" cy="320" r="6" fill="#6366F1" opacity="0.8"/>
+  <circle cx="240" cy="340" r="6" fill="#8B5CF6" opacity="0.8"/>
+  <circle cx="300" cy="320" r="6" fill="#A78BFA" opacity="0.8"/>
+
+  <!-- Text: DeFi -->
+  <text x="240" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold" font-size="32" letter-spacing="4">DeFi Sentinel</text>
+
+  <!-- Subtitle -->
+  <text x="240" y="448" text-anchor="middle" fill="#10B981" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">AUTONOMOUS YIELD AGENT</text>
+</svg>

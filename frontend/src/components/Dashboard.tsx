@@ -93,7 +93,8 @@ export default function Dashboard() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-white flex items-center gap-2">
+          <h1 className="text-2xl font-bold text-white flex items-center gap-3">
+            <img src="/logo.svg" alt="DeFi Sentinel" className="w-10 h-10 rounded-full" />
             DeFi Sentinel
           </h1>
           <p className="text-sm text-gray-500 mt-0.5">
