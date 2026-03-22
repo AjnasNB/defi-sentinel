@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: defi-sentinel-api
+    runtime: node
+    buildCommand: cd backend && npm ci
+    startCommand: cd backend && npx tsx src/index.ts
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: NODE_ENV
+        value: production
+      - key: WDK_SEED_PHRASE
+        sync: false
+      - key: AZURE_OPENAI_API_KEY
+        sync: false
+      - key: AZURE_OPENAI_ENDPOINT
+        sync: false
+      - key: AZURE_OPENAI_DEPLOYMENT_NAME
+        value: gpt-4.1
+      - key: AZURE_OPENAI_API_VERSION
+        value: 2024-02-15-preview
+      - key: ETH_RPC_URL
+        value: https://ethereum-sepolia-rpc.publicnode.com
+      - key: POLYGON_RPC_URL
+        value: https://polygon-amoy-bor-rpc.publicnode.com
+      - key: ARBITRUM_RPC_URL
+        value: https://arbitrum-sepolia-rpc.publicnode.com
+      - key: AGENT_INTERVAL_MS
+        value: 30000
+      - key: MAX_TRANSACTION_USD
+        value: 100
+      - key: DAILY_SPENDING_LIMIT_USD
+        value: 500
+      - key: MIN_YIELD_THRESHOLD_BPS
+        value: 50
